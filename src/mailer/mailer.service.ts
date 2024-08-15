@@ -3,17 +3,13 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 import * as path from 'path';
 import * as process from 'process';
 import { renderMjmlFileToHtml } from '../../utils/mjml';
-
-interface IData {
-  email: string;
-  message: string;
-}
+import { IEmailData } from './data.dto';
 
 @Injectable()
 export class MailerService {
   constructor(private readonly mailerService: NodeMailer) {}
 
-  async sendRequestEmail(data: IData) {
+  async sendRequestEmail(data: IEmailData) {
     const mjmlFilePath = path.resolve(
       process.cwd(),
       'templates',
@@ -38,7 +34,7 @@ export class MailerService {
     }
   }
 
-  async sendResponseEmail(data: IData) {
+  async sendResponseEmail(data: IEmailData) {
     const mjmlFilePath = path.resolve(
       process.cwd(),
       'templates',

@@ -7,19 +7,15 @@ import {
   Res,
 } from '@nestjs/common';
 import { Response } from 'express';
+import { IEmailData } from './data.dto';
 import { MailerService } from './mailer.service';
-
-interface EmailData {
-  email: string;
-  message: string;
-}
 
 @Controller('mail')
 export class MailerController {
   constructor(private readonly mailerService: MailerService) {}
 
   @Post('send')
-  async sendMail(@Body() data: EmailData, @Res() res: Response) {
+  async sendMail(@Body() data: IEmailData, @Res() res: Response) {
     try {
       await this.mailerService.sendRequestEmail(data);
       await this.mailerService.sendResponseEmail(data);
