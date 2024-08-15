@@ -58,15 +58,17 @@
           <!-- Social Media Links -->
           <mj-social
             font-size="15px"
-            icon-size="30px"
+            icon-size="35px"
             mode="horizontal"
-            padding="10px 0"
+            padding="7px 0"
+            css-class="responsive-social"
           >
             <mj-social-element
               name="instagram"
               href="https://www.instagram.com/goitclub/"
               background-color="#E4405F"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
             <mj-social-element
@@ -74,6 +76,7 @@
               href="https://www.facebook.com/goITclub/"
               background-color="#3B5998"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
             <mj-social-element
@@ -81,6 +84,7 @@
               href="https://www.youtube.com/c/GoIT"
               background-color="#FF0000"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
             <mj-social-element
@@ -88,6 +92,7 @@
               href="https://github.com/Vita0609/TeamOfWinners"
               background-color="#333333"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
           </mj-social>
