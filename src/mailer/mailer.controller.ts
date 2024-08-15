@@ -19,7 +19,11 @@ export class MailerController {
     try {
       await this.mailerService.sendRequestEmail(data);
       await this.mailerService.sendResponseEmail(data);
-      return res.status(HttpStatus.OK).send('WE SENDED EMAILS');
+      return res.status(HttpStatus.OK).json({
+        title: 'Thank you for your interest in cooperation!',
+        message:
+          'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.',
+      });
     } catch (error) {
       console.error('Error sending emails:', error);
       throw new HttpException(

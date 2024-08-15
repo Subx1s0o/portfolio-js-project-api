@@ -18,7 +18,7 @@ export class MailerService {
 
     const htmlContent = renderMjmlFileToHtml(mjmlFilePath, {
       email: data.email,
-      message: data.message,
+      comment: data.comment,
     });
 
     try {
@@ -43,7 +43,7 @@ export class MailerService {
 
     const htmlContent = renderMjmlFileToHtml(mjmlFilePath, {
       email: data.email,
-      message: data.message,
+      comment: data.comment,
     });
 
     try {

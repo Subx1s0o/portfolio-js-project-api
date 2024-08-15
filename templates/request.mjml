@@ -62,7 +62,7 @@
                 color="#333333"
                 padding="10px 0px 20px 0px"
               >
-                {{message}}
+                {{comment}}
               </mj-text>
             </mj-column>
           </mj-section>
