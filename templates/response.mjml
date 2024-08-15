@@ -1,6 +1,7 @@
 <mjml>
   <mj-body background-color="#ED3B44">
     <mj-wrapper>
+      <!-- Main Section -->
       <mj-section padding="20px">
         <mj-column
           width="600px"
@@ -8,23 +9,53 @@
           border-radius="8px"
           padding="20px"
         >
+          <!-- Image Section -->
           <mj-image
             src="https://i.postimg.cc/nc1xzg2D/image-2024-08-15-235559618.png"
-            alt="lloyd jefferson"
+            alt="Lloyd Jefferson"
             width="100px"
             height="100px"
             border-radius="16px"
           />
+
+          <!-- Name Heading -->
           <mj-text
             align="center"
-            font-size="20px"
-            color="#555555"
-            padding="10px 0"
+            font-size="22px"
+            font-weight="bold"
+            color="#333333"
+            padding="5px 0 10px 0"
           >
-            Hey, We received a new Email!
+            LLOYD JEFFERSON
           </mj-text>
 
+          <!-- Submission Confirmation Heading -->
+          <mj-text
+            align="center"
+            font-size="24px"
+            font-weight="bold"
+            color="#FF5F5F"
+            padding="20px 0 10px"
+          >
+            Thank you for Your Submission!
+          </mj-text>
+
+          <!-- Message Body -->
+          <mj-text
+            align="center"
+            font-size="18px"
+            color="#777777"
+            padding="10px 0 20px"
+            line-height="1.7"
+          >
+            We have received your message and appreciate your attention. We will
+            get back to you shortly.
+          </mj-text>
+
+          <!-- Divider -->
           <mj-divider border-color="#FF5F5F" />
+
+          <!-- Social Media Links -->
           <mj-social
             font-size="15px"
             icon-size="30px"
@@ -33,33 +64,42 @@
           >
             <mj-social-element
               name="instagram"
-              href="https://www.instagram.com/scalero"
+              href="https://www.instagram.com/goitclub/"
               background-color="#E4405F"
               padding="10px"
             >
             </mj-social-element>
             <mj-social-element
               name="facebook"
-              href="https://www.facebook.com/scalero.io/"
+              href="https://www.facebook.com/goITclub/"
               background-color="#3B5998"
               padding="10px"
             >
             </mj-social-element>
             <mj-social-element
               name="youtube"
-              href="https://www.youtube.com/channel/UCV6C-Tm9pYzm1_LLOwqpzWw"
+              href="https://www.youtube.com/c/GoIT"
               background-color="#FF0000"
               padding="10px"
             >
             </mj-social-element>
             <mj-social-element
               name="github"
-              href="https://github.com/scalero"
+              href="https://github.com/Vita0609/TeamOfWinners"
               background-color="#333333"
               padding="10px"
             >
             </mj-social-element>
           </mj-social>
+
+          <!-- Portfolio Link -->
+          <mj-text align="center" font-size="16px" color="#FF5F5F">
+            <a
+              href="https://vita0609.github.io/TeamOfWinners/"
+              style="color: #ff5f5f; text-decoration: none; font-weight: 500"
+              >My Portfolio</a
+            >
+          </mj-text>
         </mj-column>
       </mj-section>
     </mj-wrapper>

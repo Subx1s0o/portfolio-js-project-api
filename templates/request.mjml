@@ -8,6 +8,7 @@
           border-radius="8px"
           padding="20px"
         >
+          <!-- Image Section -->
           <mj-image
             src="https://i.postimg.cc/nc1xzg2D/image-2024-08-15-235559618.png"
             alt="lloyd jefferson"
@@ -16,6 +17,7 @@
             border-radius="16px"
           />
 
+          <!-- Heading -->
           <mj-text
             align="center"
             font-size="20px"
@@ -25,13 +27,16 @@
             Hey, We received a new Email!
           </mj-text>
 
+          <!-- Divider -->
           <mj-divider border-color="#FF5F5F" padding="20px 0" />
 
+          <!-- Email and Message Section -->
           <mj-section
             padding="20px"
             background-color="#FFF3F3"
             border-radius="8px"
             border="1px solid #ddd"
+            css-class="responsive-section"
           >
             <mj-column width="100%">
               <mj-text align="center" font-size="20px" color="#FF5F5F">
@@ -62,17 +67,20 @@
             </mj-column>
           </mj-section>
 
+          <!-- Social Icons -->
           <mj-social
             font-size="15px"
-            icon-size="30px"
+            icon-size="35px"
             mode="horizontal"
-            padding="20px 0"
+            padding="7px 0"
+            css-class="responsive-social"
           >
             <mj-social-element
               name="instagram"
               href="https://www.instagram.com/goitclub/"
               background-color="#E4405F"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
             <mj-social-element
@@ -80,6 +88,7 @@
               href="https://www.facebook.com/goITclub/"
               background-color="#3B5998"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
             <mj-social-element
@@ -87,16 +96,27 @@
               href="https://www.youtube.com/c/GoIT"
               background-color="#FF0000"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
             <mj-social-element
               name="github"
-              href="https://github.com/scalero"
+              href="https://github.com/Vita0609/TeamOfWinners"
               background-color="#333333"
               padding="10px"
+              border-radius="8px"
             >
             </mj-social-element>
           </mj-social>
+
+          <!-- Portfolio Link -->
+          <mj-text align="center" font-size="16px" color="#FF5F5F">
+            <a
+              href="https://vita0609.github.io/TeamOfWinners/"
+              style="color: #ff5f5f; text-decoration: none; font-weight: 500"
+              >My Portfolio</a
+            >
+          </mj-text>
         </mj-column>
       </mj-section>
     </mj-wrapper>
