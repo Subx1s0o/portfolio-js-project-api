@@ -1,0 +1,104 @@
+<mjml>
+  <mj-body background-color="#ED3B44">
+    <mj-wrapper>
+      <mj-section padding="20px">
+        <mj-column
+          width="600px"
+          background-color="#ffffff"
+          border-radius="8px"
+          padding="20px"
+        >
+          <mj-image
+            src="https://i.postimg.cc/nc1xzg2D/image-2024-08-15-235559618.png"
+            alt="lloyd jefferson"
+            width="100px"
+            height="100px"
+            border-radius="16px"
+          />
+
+          <mj-text
+            align="center"
+            font-size="20px"
+            color="#555555"
+            padding="10px 0"
+          >
+            Hey, We received a new Email!
+          </mj-text>
+
+          <mj-divider border-color="#FF5F5F" padding="20px 0" />
+
+          <mj-section
+            padding="20px"
+            background-color="#FFF3F3"
+            border-radius="8px"
+            border="1px solid #ddd"
+          >
+            <mj-column width="100%">
+              <mj-text align="center" font-size="20px" color="#FF5F5F">
+                <strong>Email:</strong>
+              </mj-text>
+              <mj-text
+                align="center"
+                font-size="22px"
+                color="#333333"
+                padding="10px 0px 20px 0px"
+              >
+                {{email}}
+              </mj-text>
+            </mj-column>
+            <mj-divider border-width="3px" />
+            <mj-column width="100%" padding="10px 0 0 0">
+              <mj-text align="center" font-size="20px" color="#FF5F5F">
+                <strong>Message:</strong>
+              </mj-text>
+              <mj-text
+                align="center"
+                font-size="22px"
+                color="#333333"
+                padding="10px 0px 20px 0px"
+              >
+                {{message}}
+              </mj-text>
+            </mj-column>
+          </mj-section>
+
+          <mj-social
+            font-size="15px"
+            icon-size="30px"
+            mode="horizontal"
+            padding="20px 0"
+          >
+            <mj-social-element
+              name="instagram"
+              href="https://www.instagram.com/goitclub/"
+              background-color="#E4405F"
+              padding="10px"
+            >
+            </mj-social-element>
+            <mj-social-element
+              name="facebook"
+              href="https://www.facebook.com/goITclub/"
+              background-color="#3B5998"
+              padding="10px"
+            >
+            </mj-social-element>
+            <mj-social-element
+              name="youtube"
+              href="https://www.youtube.com/c/GoIT"
+              background-color="#FF0000"
+              padding="10px"
+            >
+            </mj-social-element>
+            <mj-social-element
+              name="github"
+              href="https://github.com/scalero"
+              background-color="#333333"
+              padding="10px"
+            >
+            </mj-social-element>
+          </mj-social>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
