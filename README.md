@@ -24,8 +24,8 @@
 
 ## Description
 
-## POST mail/send
+POST mail/send
 {
-  "email": "some email",
-  "comment": "some comemnt"
+  "email": "some email :)",
+  "comment": "some comment :)"
 }
