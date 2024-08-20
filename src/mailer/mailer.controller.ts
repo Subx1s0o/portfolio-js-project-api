@@ -10,11 +10,11 @@ import { Response } from 'express';
 import { IEmailData } from './data.dto';
 import { MailerService } from './mailer.service';
 
-@Controller('mail')
+@Controller()
 export class MailerController {
   constructor(private readonly mailerService: MailerService) {}
 
-  @Post('send')
+  @Post()
   async sendMail(@Body() data: IEmailData, @Res() res: Response) {
     try {
       await this.mailerService.sendRequestEmail(data);
