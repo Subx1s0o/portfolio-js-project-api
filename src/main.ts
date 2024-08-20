@@ -8,7 +8,10 @@ async function bootstrap() {
   app.enableCors({
     origin: (origin, callback) => {
       if (
-        ['http://localhost:5173', 'https://vita0609.github.io'].includes(origin)
+        [
+          'http://localhost:5173',
+          'https://vita0609.github.io/TeamOfWinners/',
+        ].includes(origin)
       ) {
         callback(null, true);
       } else {
