@@ -7,8 +7,8 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   app.enableCors({
     origin: [
-      /http:\/\/localhost:5173\/?.*/,
-      /https:\/\/vita0609.github.io\/TeamOfWinners\/?.*/,
+      'http://localhost:5173',
+      'https://vita0609.github.io/TeamOfWinners/',
     ],
     methods: ['POST', 'GET'],
   });
