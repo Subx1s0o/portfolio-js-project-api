@@ -10,8 +10,7 @@ async function bootstrap() {
       if (
         !origin ||
         origin === 'http://localhost:5173' ||
-        origin.startsWith('https://vita0609.github.io/TeamOfWinners') ||
-        origin.startsWith('https://vita0609.github.io')
+        origin === 'https://vita0609.github.io'
       ) {
         callback(null, true);
       } else {
