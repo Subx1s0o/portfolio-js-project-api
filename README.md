@@ -24,7 +24,7 @@
 
 ## Description
 
-POST mail/send
+POST
 {
   "email": "some email :)",
   "comment": "some comment :)"
