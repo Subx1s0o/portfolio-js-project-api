@@ -7,12 +7,12 @@ import {
   Res,
 } from '@nestjs/common';
 import { Response } from 'express';
+import { AppService } from './app.service';
 import { IEmailData } from './data.dto';
-import { MailerService } from './mailer.service';
 
 @Controller('')
-export class MailerController {
-  constructor(private readonly mailerService: MailerService) {}
+export class AppController {
+  constructor(private readonly mailerService: AppService) {}
 
   @Post('')
   async sendMail(@Body() data: IEmailData, @Res() res: Response) {

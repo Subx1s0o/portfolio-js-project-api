@@ -1,13 +1,13 @@
-import { MailerService as NodeMailer } from '@nestjs-modules/mailer';
+import { MailerService } from '@nestjs-modules/mailer';
 import { BadRequestException, Injectable } from '@nestjs/common';
 import * as path from 'path';
 import * as process from 'process';
-import { renderMjmlFileToHtml } from '../../utils/mjml';
+import { renderMjmlFileToHtml } from '../utils/mjml';
 import { IEmailData } from './data.dto';
 
 @Injectable()
-export class MailerService {
-  constructor(private readonly mailerService: NodeMailer) {}
+export class AppService {
+  constructor(private readonly mailerService: MailerService) {}
 
   async sendRequestEmail(data: IEmailData) {
     const mjmlFilePath = path.resolve(
